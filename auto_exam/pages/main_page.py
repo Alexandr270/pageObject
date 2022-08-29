@@ -1,6 +1,7 @@
 from .base_page import BasePage
 from .locators import MainPageLocators
-import time
+# import time
+
 
 class MainPage(BasePage):
     def go_to_login_page(self):
