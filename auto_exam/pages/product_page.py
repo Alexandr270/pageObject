@@ -24,3 +24,12 @@ class ProductPage(BasePage):
         print(book_price)
         print(basket_total)
         assert book_price == basket_total, "Book price is not equal basket total"
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(ProductPageLocators.MESSAGE_ABOUT_ADDING), \
+            "Success message is presented, but should not be"
+
+    def should_see_as_disappearing_message(self):
+        assert self.is_disappeared(ProductPageLocators.MESSAGE_ABOUT_ADDING), \
+            "Success message is presented, but it must disappeared"
+
