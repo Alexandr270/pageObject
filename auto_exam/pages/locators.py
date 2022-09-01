@@ -13,3 +13,8 @@ class ProductPageLocators:
     PRODUCT_NAME = '//div[contains(@class, "product_main")]/h1'
     BASKET_TOTAL = '//div[@id="messages"]/div[3]/div/p/strong'
     BOOK_PRICE = '//div[contains(@class, "product_main")]/p'
+
+
+class BasePageLocators:
+    LOGIN_LINK = '//a[@id="login_link"]'
+    LOGIN_LINK_INVALID = '//a[@id="login_link_inc"]'
