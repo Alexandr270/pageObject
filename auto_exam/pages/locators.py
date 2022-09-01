@@ -18,3 +18,9 @@ class ProductPageLocators:
 class BasePageLocators:
     LOGIN_LINK = '//a[@id="login_link"]'
     LOGIN_LINK_INVALID = '//a[@id="login_link_inc"]'
+
+
+class BasketPageLocators:
+    BASKET_LINK = '//a[@class="btn btn-default"]'
+    EMPTY_BASKET_MESSAGE = '//div[@id="content_inner"]/p'
+    SOME_STUFF_IN_BASKET = '//h2[contains(text(), "Товары в корзине")]'
