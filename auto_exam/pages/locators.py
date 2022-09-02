@@ -5,6 +5,10 @@ class MainPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = '//form[@id="login_form"]'
     REGISTER_FORM = '//form[@id="register_form"]'
+    REGISTRATION_EMAIL = '//input[@name="registration-email"]'
+    REGISTRATION_PASSWORD = '//input[@name="registration-password1"]'
+    REGISTRATION_PASSWORD_REPEAT = '//input[@name="registration-password2"]'
+    REGISTRATION_BUTTON = '//button[@name="registration_submit"]'
 
 
 class ProductPageLocators:
@@ -18,6 +22,7 @@ class ProductPageLocators:
 class BasePageLocators:
     LOGIN_LINK = '//a[@id="login_link"]'
     LOGIN_LINK_INVALID = '//a[@id="login_link_inc"]'
+    USER_ICON = '//i[@class="icon-user"]'
 
 
 class BasketPageLocators:
